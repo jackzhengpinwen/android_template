@@ -14,4 +14,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "android_template"
-include ':app'
+include(":app")
+include(":core-common")
+include(":core-datastore")
+include(":core-model")
+include(":core-testing")
