@@ -38,7 +38,7 @@ class SyncInitializer : Initializer<Sync> {
 
 class LoggerInitializer: Initializer<String> {
     override fun create(context: Context): String {
-        Logger.initialize()
+        Logger.initialize(context)
         return "Logger"
     }
 
