@@ -3,6 +3,7 @@ import com.google.protobuf.gradle.generateProtoTasks
 import com.google.protobuf.gradle.protobuf
 import com.google.protobuf.gradle.protoc
 
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     id("android_template.android.library")
     kotlin("kapt")
@@ -50,4 +51,9 @@ dependencies {
     kaptAndroidTest(libs.hilt.compiler)
 
     testImplementation(project(":core-testing"))
+}
+
+// TODO b/239411851, Remove kapt workaround configuration
+kapt {
+    correctErrorTypes = true
 }

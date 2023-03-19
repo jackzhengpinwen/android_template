@@ -1,3 +1,4 @@
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     id("android_template.android.library")
     kotlin("kapt")

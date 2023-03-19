@@ -3,6 +3,7 @@ package com.example.core_network.retrofit
 //import com.example.core_network.BuildConfig
 import com.example.core_network.NiaNetworkDataSource
 import com.example.core_network.model.NetworkAuthor
+import com.example.core_network.model.NetworkChangeList
 import com.example.core_network.retrofit.api.RetrofitNiaNetworkApi
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -38,5 +39,8 @@ class RetrofitNiaNetwork @Inject constructor(
     override suspend fun getAuthors(ids: List<String>?): List<NetworkAuthor> {
         return networkApi.getAuthors(ids = ids).data
     }
+
+    override suspend fun getAuthorChangeList(after: Int?): List<NetworkChangeList> =
+        networkApi.getAuthorsChangeList(after = after)
 
 }

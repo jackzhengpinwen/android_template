@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import com.android.build.gradle.LibraryExtension
+import com.example.myapplication.internal.configureFlavors
 import com.example.myapplication.internal.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -19,6 +20,7 @@ class AndroidLibraryConventionPlugin: Plugin<Project> {
             extensions.configure(LibraryExtension::class.java) {
                 configureKotlinAndroid(this)
                 defaultConfig.targetSdk = 33
+                configureFlavors(this)
             }
 
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
