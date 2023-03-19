@@ -39,10 +39,11 @@ android {
 }
 
 dependencies {
+    implementation(project(":sync"))
+    implementation(project(":core-common"))
     androidTestImplementation(project(":core-datastore-test"))
     androidTestImplementation(project(":core-testing"))
     androidTestImplementation(project(":core-network"))
-    implementation(project(":sync"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material3)

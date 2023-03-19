@@ -6,6 +6,7 @@ import androidx.startup.Initializer
 import androidx.work.ExistingWorkPolicy
 import androidx.work.WorkManager
 import androidx.work.WorkManagerInitializer
+import com.example.core_common.Logger
 import com.example.sync.workers.SyncWorker
 
 object Sync {
@@ -32,5 +33,15 @@ class SyncInitializer : Initializer<Sync> {
     }
 
     override fun dependencies(): List<Class<out Initializer<*>>> =
-        listOf(WorkManagerInitializer::class.java)
+        listOf(WorkManagerInitializer::class.java, LoggerInitializer::class.java)
+}
+
+class LoggerInitializer: Initializer<String> {
+    override fun create(context: Context): String {
+        Logger.initialize()
+        return "Logger"
+    }
+
+    override fun dependencies(): MutableList<Class<out Initializer<*>>> = mutableListOf()
+
 }
