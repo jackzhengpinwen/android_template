@@ -21,4 +21,5 @@ include(":core-model")
 include(":core-testing")
 include(":core-datastore-test")
 include(":core-database")
-
+include(":core-network")
+include(":sync")
