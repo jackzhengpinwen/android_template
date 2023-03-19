@@ -20,3 +20,5 @@ include(":core-datastore")
 include(":core-model")
 include(":core-testing")
 include(":core-datastore-test")
+include(":core-database")
+
