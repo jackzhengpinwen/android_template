@@ -20,6 +20,7 @@ class AndroidLibraryConventionPlugin: Plugin<Project> {
             extensions.configure(LibraryExtension::class.java) {
                 configureKotlinAndroid(this)
                 defaultConfig.targetSdk = 33
+                defaultConfig.multiDexEnabled = true
                 configureFlavors(this)
             }
 

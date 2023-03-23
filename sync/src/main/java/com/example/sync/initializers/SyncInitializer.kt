@@ -45,7 +45,7 @@ class SyncInitializer : Initializer<Sync> {
 class LoggerInitializer: Initializer<String> {
     override fun create(context: Context): String {
         // log by me
-        Logger.initialize(context)
+//        Logger.initialize(context)
 
         // log by others
         val logPath = if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED)

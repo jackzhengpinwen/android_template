@@ -8,10 +8,12 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.appcompat)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
 
     implementation(libs.timber)
     implementation(libs.android.okio)
+    implementation(libs.retrofit.gson)
 }
