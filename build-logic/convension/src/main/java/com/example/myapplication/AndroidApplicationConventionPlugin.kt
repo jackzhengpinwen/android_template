@@ -16,6 +16,8 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
             extensions.configure(BaseAppModuleExtension::class.java) {
                 configureKotlinAndroid(this)
                 defaultConfig.targetSdk = 33
+                viewBinding.enable = true
+                dataBinding.enable = true
             }
         }
     }

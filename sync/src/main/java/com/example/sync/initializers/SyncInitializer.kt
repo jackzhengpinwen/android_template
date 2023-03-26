@@ -2,12 +2,14 @@ package com.example.sync.initializers
 
 import android.content.Context
 import android.os.Environment
+import android.os.Handler
 import androidx.startup.AppInitializer
 import androidx.startup.Initializer
 import androidx.work.ExistingWorkPolicy
 import androidx.work.WorkManager
 import androidx.work.WorkManagerInitializer
 import com.example.core_common.Logger
+import com.example.core_common.base.core.BaseLibCore
 import com.example.core_common.log.LogUtil
 import com.example.core_common.log.interceptor.Log2FileInterceptor
 import com.example.core_common.log.interceptor.LogDecorateInterceptor
@@ -39,7 +41,17 @@ class SyncInitializer : Initializer<Sync> {
     }
 
     override fun dependencies(): List<Class<out Initializer<*>>> =
-        listOf(WorkManagerInitializer::class.java, LoggerInitializer::class.java)
+        listOf(WorkManagerInitializer::class.java, CommonInitializer::class.java ,LoggerInitializer::class.java)
+}
+
+class CommonInitializer: Initializer<Any> {
+    override fun create(context: Context): Any {
+        BaseLibCore.init(context, Handler(), android.os.Process.myTid())
+        return ""
+    }
+
+    override fun dependencies(): MutableList<Class<out Initializer<*>>> = mutableListOf()
+
 }
 
 class LoggerInitializer: Initializer<String> {

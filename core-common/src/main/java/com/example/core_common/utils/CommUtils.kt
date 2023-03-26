@@ -10,12 +10,12 @@ import android.view.View
 import androidx.core.content.ContextCompat
 
 object CommUtils {
-    private var mApplication: Application? = null
+    private var mApplication: Context? = null
     private var mHandler: Handler? = null
     private var mMainTheadId = 0
 
-    fun init(application: Application?, handler: Handler?, mainTheadId: Int) {
-        mApplication = application
+    fun init(context: Context, handler: Handler?, mainTheadId: Int) {
+        mApplication = context
         mHandler = handler
         mMainTheadId = mainTheadId
     }

@@ -7,9 +7,15 @@ android {
     namespace = "com.example.core_common"
 }
 
+kapt {
+    generateStubs = true
+}
+
 dependencies {
     // appcompat
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview)
     // coroutine
     implementation(libs.kotlinx.coroutines.android)
     // lifecycle
