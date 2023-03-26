@@ -21,6 +21,8 @@ class AndroidLibraryConventionPlugin: Plugin<Project> {
                 configureKotlinAndroid(this)
                 defaultConfig.targetSdk = 33
                 defaultConfig.multiDexEnabled = true
+                viewBinding.enable = true
+                dataBinding.enable = true
                 configureFlavors(this)
             }
 

@@ -1,4 +1,4 @@
-package com.example.core_common.base
+package com.example.core_common.base.activity
 
 import android.app.Activity
 import android.content.Context
@@ -124,7 +124,8 @@ abstract class AbsActivity : AppCompatActivity(), ConnectivityReceiver.Connectiv
      */
     override fun onConfigurationChanged(newConfig: Configuration) {
         if (newConfig.fontScale != 1f)
-        //非默认值    //当接收系统的字体大小改变的时候。重置为默认
+            //非默认值
+            // 当接收系统的字体大小改变的时候。重置为默认
             resources
         super.onConfigurationChanged(newConfig)
     }
