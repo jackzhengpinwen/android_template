@@ -33,6 +33,13 @@
                     android:text="1.基本Activity/Fragment的使用（占位图1）"
                     android:textAllCaps="false"
                     binding:clicks="@{click.navDemo1}" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.自动加载服务"
+                    android:textAllCaps="false"
+                    binding:clicks="@{click.navAutoLoader}" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

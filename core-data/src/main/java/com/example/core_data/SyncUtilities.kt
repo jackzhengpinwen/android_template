@@ -2,7 +2,7 @@ package com.example.core_data
 
 import android.util.Log
 import com.example.core_network.model.NetworkChangeList
-import com.samples.nowinandroid_demo.core.datastore.ChangeListVersions
+import com.example.core_datastore.ChangeListVersions
 import java.util.concurrent.CancellationException
 
 /**

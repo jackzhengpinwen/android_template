@@ -16,6 +16,7 @@
 
 package com.samples.nowinandroid_demo.core.datastore
 
+import com.example.core_datastore.IntToStringIdsMigration
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

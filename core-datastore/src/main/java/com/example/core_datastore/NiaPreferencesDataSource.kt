@@ -5,7 +5,6 @@ import androidx.datastore.core.DataStore
 import com.example.core_model.UserData
 import com.google.protobuf.kotlin.DslList
 import com.google.protobuf.kotlin.DslProxy
-import com.samples.nowinandroid_demo.core.datastore.ChangeListVersions
 import com.zpw.android_tempalte.core.datastore.UserPreferences
 import com.zpw.android_tempalte.core.datastore.UserPreferencesKt
 import com.zpw.android_tempalte.core.datastore.copy

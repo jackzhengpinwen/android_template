@@ -10,7 +10,7 @@ import com.example.core_data.Synchronizer
 import com.example.core_data.repository.AuthorsRepository
 import com.example.core_datastore.NiaPreferencesDataSource
 import com.example.sync.initializers.syncForegroundInfo
-import com.samples.nowinandroid_demo.core.datastore.ChangeListVersions
+import com.example.core_datastore.ChangeListVersions
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.CoroutineDispatcher

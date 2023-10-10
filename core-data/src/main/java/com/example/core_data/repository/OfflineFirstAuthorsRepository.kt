@@ -24,7 +24,7 @@ import com.example.core_database.model.AuthorEntity
 import com.example.core_database.model.asExternalModel
 import com.example.core_network.NiaNetworkDataSource
 import com.example.core_network.model.NetworkAuthor
-import com.samples.nowinandroid_demo.core.datastore.ChangeListVersions
+import com.example.core_datastore.ChangeListVersions
 import com.samples.nowinandroid_demo.core.model.data.Author
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow

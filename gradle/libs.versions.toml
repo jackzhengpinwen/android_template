@@ -30,6 +30,9 @@ gson = "2.9.0"
 lifecycle = "2.4.1"
 constraintlayout = "2.0.4"
 recyclerview = "1.2.0"
+autoSservice = "1.0.1"
+autoSserviceAnnotations = "1.0.1"
+javapoet = "1.13.0"
 [libraries]
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -74,6 +77,9 @@ androidx-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-k
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 databing-compiler = { group = "com.android.databinding", name = "compiler", version.ref = "androidGradlePlugin"}
+auto-service = { group = "com.google.auto.service", name = "auto-service", version.ref = "autoSservice"}
+auto-service-annotations = { group = "com.google.auto.service", name = "auto-service-annotations", version.ref = "autoSserviceAnnotations"}
+javapoet = { group = "com.squareup", name = "javapoet", version.ref = "javapoet"}
 [plugins]
 protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

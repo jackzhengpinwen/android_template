@@ -7,7 +7,7 @@ import androidx.datastore.dataStoreFile
 import com.example.core_common.Dispatcher
 import com.example.core_common.NiaDispatchers
 import com.example.core_datastore.UserPreferencesSerializer
-import com.samples.nowinandroid_demo.core.datastore.IntToStringIdsMigration
+import com.example.core_datastore.IntToStringIdsMigration
 import com.zpw.android_tempalte.core.datastore.UserPreferences
 import dagger.Module
 import dagger.Provides

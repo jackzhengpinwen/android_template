@@ -43,6 +43,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":core-autoloader-annotation"))
+    kapt(project(":core-autoloader-complier"))
+    implementation(project(":autoloader"))
     implementation(project(":sync"))
     implementation(project(":core-common"))
     androidTestImplementation(project(":core-datastore-test"))
